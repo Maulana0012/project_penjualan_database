@@ -16,7 +16,7 @@ public class MainFile {
      */
     public static void main(String[] args) {
         Database dbConnect = new Database();
-        dbConnect.showTable("konsumen");
+        dbConnect.getTableColumn("jual_produk");
 //======= Input Table umkm         
 //        dbConnect.insertValueUMKM("001UF", "Batik Boga", "Rahmadi", "Fashion", "Jalan C", "3313091704331", "AISA");
 //        dbConnect.insertValueUMKM("001UM", "Gelato", "Rahmadi", "Makanan", "Jalan D", "3313091704332", "ADES");
