@@ -8,7 +8,9 @@ import java.sql.Connection; // mendapatkan koneksi
 import java.sql.DriverManager; // menghubunkan database
 import java.sql.PreparedStatement; // perintah sql [CRUD]
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.util.ArrayList;
+import java.util.Iterator;
 //
 
 /**
@@ -272,7 +274,7 @@ public class Database {
     }
     
     // =============================================================
-        public void showTable(String namaTable) {
+        public void getAllTableValue(String namaTable) {
         try {
             String sqlRead = "Select * from " + namaTable;
             PreparedStatement perintahRead = connectionDB.prepareStatement(sqlRead);
@@ -335,5 +337,37 @@ public class Database {
         catch (Exception e) {
             System.out.println(e.getMessage());
         }
+    }
+        
+    public void getSingleColumnValue(String tableName, String columnName){
+        try {
+            String sqlRead = "Select " + columnName + " From " + tableName;
+            PreparedStatement perintahRead = connectionDB.prepareStatement(sqlRead);
+            result = perintahRead.executeQuery();
+            int tempNum = 0;
+            System.out.println("No\t" + columnName);
+            while (result.next()) {
+                tempNum += 1;
+                System.out.println(tempNum + "\t" + result.getString(columnName));
+            }
+        }
+        catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }    
+    
+    public void getTableColumn(String tableName){
+        try {
+            String sqlRead = "Select * From " + tableName;
+            PreparedStatement perintahRead = connectionDB.prepareStatement(sqlRead);
+            result = perintahRead.executeQuery();
+            ResultSetMetaData resultMetaData = result.getMetaData();
+            for (int index = 1; index < resultMetaData.getColumnCount(); index++) {
+                System.out.println(index + ": " + resultMetaData.getColumnName(index));
+            }
+        }
+        catch (Exception e) {
+        }
+        
     }
 }
