@@ -4,6 +4,7 @@
  */
 package Main;
 import CRUD.Database;
+import GUI.Form_Menu;
 
 /**
  *
@@ -15,8 +16,12 @@ public class MainFile {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Database dbConnect = new Database();
-        dbConnect.getTableColumn("jual_produk");
+//        Database dbConnect = new Database();
+        new Form_Menu().setVisible(true);
+        System.err.println("");
+//        System.out.print(dbConnect.insertValueJenisIndustri("123", "123"));
+//        dbConnect.insertValueTransaksi("001F", 12, "001");
+//        dbConnect.getTableColumn("jual_produk");
 //======= Input Table umkm         
 //        dbConnect.insertValueUMKM("001UF", "Batik Boga", "Rahmadi", "Fashion", "Jalan C", "3313091704331", "AISA");
 //        dbConnect.insertValueUMKM("001UM", "Gelato", "Rahmadi", "Makanan", "Jalan D", "3313091704332", "ADES");

@@ -3,8 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Java/project_penjualan_database/src/GUI/Form_jenis_industri.java</file>
+            <file>file:/C:/Java/project_penjualan_database/src/Class/GetDataTransaksi.java</file>
+            <file>file:/C:/Java/project_penjualan_database/src/Class/Konsumen.java</file>
+            <file>file:/C:/Java/project_penjualan_database/src/GUI/Form_umkm.java</file>
+            <file>file:/C:/Java/project_penjualan_database/src/GUI/Form_jual_produk.java</file>
             <file>file:/C:/Java/project_penjualan_database/src/Main/MainFile.java</file>
+            <file>file:/C:/Java/project_penjualan_database/src/GUI/Form_Menu.java</file>
+            <file>file:/C:/Java/project_penjualan_database/src/Class/Transaksi.java</file>
             <file>file:/C:/Java/project_penjualan_database/src/CRUD/Database.java</file>
+            <file>file:/C:/Java/project_penjualan_database/src/GUI/Form_transaksi.java</file>
+            <file>file:/C:/Java/project_penjualan_database/src/GUI/Form_konsumen.java</file>
         </group>
     </open-files>
 </project-private>
